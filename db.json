@@ -1,0 +1,57 @@
+{
+  "tasks": [
+    {
+      "id": "1066abc6-c894-4d31-b7ca-cc857a77bedc",
+      "title": "teste",
+      "isCompleted": false
+    },
+    {
+      "id": "b06910e5-38fd-43ad-b1a6-985a8865c2f7",
+      "title": "teste3",
+      "isCompleted": false
+    },
+    {
+      "id": "9b5a1068-ebc3-4ad1-aa13-c9ac832cbff9",
+      "title": "teste4",
+      "isCompleted": false
+    },
+    {
+      "id": "dd7fd70e-e361-4d63-a82b-a3642110d0f9",
+      "title": "teste2",
+      "isCompleted": false
+    },
+    {
+      "id": "9657ea1c-b5c1-41bf-bcba-08b76a52cc89",
+      "title": "teste1",
+      "isCompleted": false
+    },
+    {
+      "id": "7ae4d6d9-fa86-4feb-b25b-97aa831ca963",
+      "title": "teste5",
+      "isCompleted": false
+    }
+  ],
+  "users": [
+    {
+      "id": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963",
+      "name": "admin",
+      "email": "admin@admin.com",
+      "password": "admin",
+      "phone": "123456789"
+    },
+    {
+      "id": "f737c914-845c-4c05-af11-e5c22865e982",
+      "name": "Luiz Fernando da Silva",
+      "email": "admin@psyber.com.br",
+      "password": "admin",
+      "phone": "35992283349"
+    },
+    {
+      "id": "c72c2750-f292-40d0-b052-17bef5975102",
+      "name": "Camila Helena Teixeira",
+      "email": "camila@psyber.com.br",
+      "password": "admin",
+      "phone": "37999077226"
+    }
+  ]
+}
