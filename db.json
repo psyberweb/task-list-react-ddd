@@ -1,57 +1,97 @@
 {
   "tasks": [
     {
-      "id": "1066abc6-c894-4d31-b7ca-cc857a77bedc",
-      "title": "teste",
-      "isCompleted": false
-    },
-    {
-      "id": "b06910e5-38fd-43ad-b1a6-985a8865c2f7",
-      "title": "teste3",
-      "isCompleted": false
-    },
-    {
-      "id": "9b5a1068-ebc3-4ad1-aa13-c9ac832cbff9",
-      "title": "teste4",
-      "isCompleted": false
-    },
-    {
       "id": "dd7fd70e-e361-4d63-a82b-a3642110d0f9",
       "title": "teste2",
-      "isCompleted": false
+      "description": "teste",
+      "isCompleted": false,
+      "userId": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963"
     },
     {
-      "id": "9657ea1c-b5c1-41bf-bcba-08b76a52cc89",
       "title": "teste1",
-      "isCompleted": false
+      "description": "teste",
+      "isCompleted": true,
+      "userId": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963",
+      "id": "9657ea1c-b5c1-41bf-bcba-08b76a52cc89"
     },
     {
       "id": "7ae4d6d9-fa86-4feb-b25b-97aa831ca963",
       "title": "teste5",
-      "isCompleted": false
+      "description": "teste",
+      "isCompleted": false,
+      "userId": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963"
+    },
+    {
+      "title": "teste3",
+      "description": "sddgdf fgdgd dfgdg",
+      "isCompleted": true,
+      "userId": "c72c2750-f292-40d0-b052-17bef5975102",
+      "id": "70409e99-5939-4ace-ac27-9a37ccd014e8"
+    },
+    {
+      "title": "teste4",
+      "description": "dgfhjk jhkjhkyuyi",
+      "isCompleted": false,
+      "userId": "f737c914-845c-4c05-af11-e5c22865e982",
+      "id": "7c07d872-a208-40f1-868e-a902f462e7c3"
     }
   ],
   "users": [
     {
-      "id": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963",
       "name": "admin",
+      "username": "admin@admin.com",
       "email": "admin@admin.com",
-      "password": "admin",
-      "phone": "123456789"
+      "password": "$2a$10$A7atrnYdxQ0kCpiEDYWEs.Pe.8gn9aQ3lOmL0lRfAOkHXb6X8bjv2",
+      "phone": "123456789",
+      "roles": [
+        1
+      ],
+      "id": "1ae4d6d9-fa86-4feb-b25b-97aa831ca963"
     },
     {
-      "id": "f737c914-845c-4c05-af11-e5c22865e982",
       "name": "Luiz Fernando da Silva",
+      "username": "admin@psyber.com.br",
       "email": "admin@psyber.com.br",
-      "password": "admin",
-      "phone": "35992283349"
+      "password": "$2a$10$kLCFb4yMIouY6/rvoezpr.0FTaKhJVSHcmD3rVYXMlFE9wegJjfh6",
+      "phone": "35992283349",
+      "roles": [
+        1,
+        2
+      ],
+      "id": "f737c914-845c-4c05-af11-e5c22865e982"
     },
     {
-      "id": "c72c2750-f292-40d0-b052-17bef5975102",
       "name": "Camila Helena Teixeira",
+      "username": "camila@psyber.com.br",
       "email": "camila@psyber.com.br",
-      "password": "admin",
-      "phone": "37999077226"
+      "password": "$2a$10$H8f3VIunPe9yLiV.lLqJo.N84LGL0MsCIXl7FN2.R.5aw0otNCW16",
+      "phone": "37999077226",
+      "roles": [
+        2
+      ],
+      "id": "c72c2750-f292-40d0-b052-17bef5975102"
+    },
+    {
+      "name": "Miguel Rodrigues Silva",
+      "username": "miguel@psyber.com.br",
+      "email": "miguel@psyber.com.br",
+      "password": "$2a$10$wAO3OlKR43LIthfTiQ9h..xxxgIs86j1sX7FFtxhG41o2giMkcGNq",
+      "phone": "37999977226",
+      "roles": [
+        2
+      ],
+      "id": "d8bfa507-9e16-4bfe-8f17-9643f337fedf"
+    },
+    {
+      "name": "qweqwe",
+      "username": "admin@pqweer.com.br",
+      "email": "admin@pqweer.com.br",
+      "password": "$2a$10$MGPxaXg2687gVI7rJPxDh.HZclwXlh4klGObyWv0BN2VK45CAcv8O",
+      "phone": "123123123",
+      "roles": [
+        2
+      ],
+      "id": "45984750-7532-4304-b636-a6bda8463782"
     }
   ]
 }

@@ -9,8 +9,8 @@ export class UserService {
     return this.userRepository.getAllUsers();
   }
 
-  async createUser(name: string, email: string, password: string, phone: string): Promise<void> {
-    const user = new User(new UserId(''), name, email, password, phone);
+  async createUser(name: string, email: string, password: string, phone: string, roles: number[]): Promise<void> {
+    const user = new User(new UserId(), name, email, email, password, phone, roles);
     return this.userRepository.createUser(user);
   }
 

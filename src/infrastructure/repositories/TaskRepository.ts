@@ -10,7 +10,7 @@ export class TaskRepository implements ITaskRepository {
     const response = await api.get(this.apiUrl);
     return response.data.map(
       (taskData: any) =>
-        new Task(new TaskId(taskData.id), taskData.title, taskData.isCompleted)
+        new Task(new TaskId(taskData.id), taskData.title, taskData.description, taskData.isCompleted, taskData.userId)
     );
   }
 
@@ -18,18 +18,22 @@ export class TaskRepository implements ITaskRepository {
     await api.post(this.apiUrl, {
       id: task.id.value,
       title: task.title,
-      isCompleted: task.isCompleted
+      description: task.description,
+      isCompleted: task.isCompleted,
+      userId: task.userId
     });
   }
 
   async updateTask(task: Task): Promise<void> {
     await api.put(`${this.apiUrl}/${task.id.value}`, {
       title: task.title,
-      isCompleted: task.isCompleted
+      description: task.description,
+      isCompleted: task.isCompleted,
+      userId: task.userId
     });
   }
 
-  async deleteTask(id: string): Promise<void> {
-    await api.delete(`${this.apiUrl}/${id}`);
+  async deleteTask(id: TaskId): Promise<void> {
+    await api.delete(`${this.apiUrl}/${id.value}`);
   }
 }

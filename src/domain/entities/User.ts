@@ -2,25 +2,60 @@ import { UserId } from '../value-objects/UserId';
 
 export class User {
   constructor(
-    public readonly id: UserId,
-    public name: string,
-    public email: string,
-    public password: string,
-    public phone: string
+    private readonly _id: UserId,
+    private _name: string,
+    private _username: string,
+    private _email: string,
+    private _password: string,
+    private _phone: string,
+    private _roles: number[]
   ) {}
 
-  // Método para atualizar o nome do usuário
+  get id() {
+    return this._id;
+  }
+
+  get name() {
+    return this._name;
+  }
+
+  get username() {
+    return this._username;
+  }
+
+  get email() {
+    return this._email;
+  }
+
+  get phone() {
+    return this._phone;
+  }
+
+  get password() {
+    return this._password;
+  }
+
+  get roles() {
+    return this._roles;
+  }
+
   updateName(name: string): void {
-    this.name = name;
+    this._name = name;
   }
 
-  // Método para atualizar o telefone
   updatePhone(phone: string): void {
-    this.phone = phone;
+    this._phone = phone;
   }
 
-  // Método para atualizar a senha
   updatePassword(password: string): void {
-    this.password = password;
+    this._password = password;
+  }
+
+  addRole(role: number): void {
+    this._roles.push(role);
+  }
+
+  removeRole(role: number): void {
+    this._roles = this._roles.filter((r) => r !== role);
   }
 }

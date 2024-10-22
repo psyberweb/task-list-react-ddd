@@ -9,9 +9,13 @@ export class TaskService {
     return await this.taskRepository.getAllTasks();
   }
 
-  async createTask(title: string): Promise<void> {
-    const newTask = new Task(new TaskId(), title);
+  async createTask(title: string, description: string, userId: string): Promise<void> {
+    const newTask = new Task(new TaskId(), title, description, false, userId);
     await this.taskRepository.createTask(newTask);
+  }
+
+  async updateTask(task: Task): Promise<void> {
+    await this.taskRepository.updateTask(task);
   }
 
   async toggleTaskCompletion(task: Task): Promise<void> {
@@ -20,6 +24,7 @@ export class TaskService {
   }
 
   async deleteTask(id: string): Promise<void> {
-    await this.taskRepository.deleteTask(id);
+    const taskId = new TaskId(id);
+    await this.taskRepository.deleteTask(taskId);
   }
 }

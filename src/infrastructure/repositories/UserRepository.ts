@@ -13,9 +13,11 @@ export class UserRepository implements IUserRepository {
         new User(
           new UserId(userData.id),
           userData.name,
+          userData.username,
           userData.email,
           userData.password,
-          userData.phone
+          userData.phone,
+          userData.roles
         )
     );
   }
@@ -24,18 +26,22 @@ export class UserRepository implements IUserRepository {
     await api.post(this.apiUrl, {
       id: user.id.value,
       name: user.name,
+      username: user.username,
       email: user.email,
       password: user.password,
-      phone: user.phone
+      phone: user.phone,
+      roles: user.roles
     });
   }
 
   async updateUser(user: User): Promise<void> {
     await api.put(`${this.apiUrl}/${user.id.value}`, {
       name: user.name,
+      username: user.username,
       email: user.email,
       password: user.password,
-      phone: user.phone
+      phone: user.phone,
+      roles: user.roles
     });
   }
 
